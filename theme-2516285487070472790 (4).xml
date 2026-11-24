@@ -1,0 +1,3558 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+
+  <meta charset='UTF-8'/>
+  <meta content='width=device-width, initial-scale=1' name='viewport'/>
+
+  <title><data:blog.pageTitle/></title>
+
+  <meta expr:content='data:blog.metaDescription' name='description'/>
+
+  <b:skin><![CDATA[
+
+/* ================================
+   GSM HASAN PREMIUM BLOGGER THEME
+   ================================ */
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+body{
+  margin:0;
+  padding:0;
+  background:#070b14;
+  color:#e8eef7;
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.7;
+}
+
+a{
+  color:#42a5ff;
+  text-decoration:none;
+}
+
+a:hover{
+  color:#00e5ff;
+}
+
+/* HEADER */
+
+.gh-header{
+  background:linear-gradient(135deg,#05070d,#0b1730,#06111e);
+  border-bottom:1px solid rgba(0,200,255,.25);
+  box-shadow:0 5px 30px rgba(0,0,0,.5);
+  position:relative;
+  z-index:999;
+}
+
+.gh-top{
+  max-width:1200px;
+  margin:auto;
+  padding:22px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.gh-logo{
+  font-size:28px;
+  font-weight:900;
+  letter-spacing:2px;
+  color:#fff;
+}
+
+.gh-logo span{
+  color:#00d9ff;
+}
+
+.gh-tag{
+  font-size:12px;
+  color:#9db0c8;
+  margin-top:3px;
+}
+
+.gh-wa{
+  background:#16c76a;
+  color:#fff!important;
+  padding:11px 18px;
+  border-radius:30px;
+  font-weight:bold;
+  box-shadow:0 5px 20px rgba(22,199,106,.25);
+}
+
+/* NAVIGATION */
+
+.gh-nav{
+  background:#090f1b;
+  border-top:1px solid rgba(255,255,255,.05);
+}
+
+.gh-nav-inner{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  overflow-x:auto;
+  white-space:nowrap;
+}
+
+.gh-nav a{
+  display:block;
+  padding:14px 17px;
+  color:#d8e4f2;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.gh-nav a:hover{
+  background:#0e233b;
+  color:#00e5ff;
+}
+
+/* HERO */
+
+.gh-hero{
+  max-width:1200px;
+  margin:25px auto;
+  padding:42px 25px;
+  border-radius:22px;
+  background:
+    radial-gradient(circle at 80% 20%,rgba(0,229,255,.18),transparent 35%),
+    linear-gradient(135deg,#0c1729,#07101d);
+  border:1px solid rgba(0,210,255,.2);
+  text-align:center;
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+.gh-hero h1{
+  margin:0;
+  font-size:42px;
+  color:#fff;
+  letter-spacing:2px;
+}
+
+.gh-hero h1 span{
+  color:#00dcff;
+}
+
+.gh-hero p{
+  color:#aabbd0;
+  margin:12px 0 25px;
+}
+
+.gh-btn{
+  display:inline-block;
+  padding:12px 22px;
+  border-radius:30px;
+  background:linear-gradient(90deg,#008cff,#00d9ff);
+  color:#fff!important;
+  font-weight:bold;
+  margin:5px;
+  box-shadow:0 8px 25px rgba(0,170,255,.25);
+}
+
+/* CATEGORY BOXES */
+
+.gh-categories{
+  max-width:1200px;
+  margin:25px auto;
+  padding:0 15px;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:12px;
+}
+
+.gh-cat{
+  background:#0d1523;
+  border:1px solid #182b42;
+  padding:17px 10px;
+  text-align:center;
+  border-radius:14px;
+  color:#dce9f7;
+  font-weight:bold;
+  transition:.25s;
+}
+
+.gh-cat:hover{
+  transform:translateY(-3px);
+  border-color:#00cfff;
+  box-shadow:0 10px 30px rgba(0,180,255,.12);
+}
+
+.gh-categories a[href='/search/label/FRP'],
+.gh-categories a[href='/search/label/FLASHING'],
+.gh-categories a[href='/search/label/TOOLS'],
+.gh-categories a[href='/search/label/DRIVERS'],
+.gh-categories a[href='/search/label/EDL']{
+  display:none!important;
+}
+}
+}
+
+/* MAIN */
+
+.gh-container{
+  max-width:1200px;
+  margin:30px auto;
+  padding:0 15px;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 320px;
+  gap:25px;
+}
+
+.gh-main,
+.gh-sidebar{
+  min-width:0;
+}
+
+/* WIDGETS */
+
+.widget{
+  background:#0c1421;
+  border:1px solid #182b42;
+  border-radius:16px;
+  padding:18px;
+  margin-bottom:20px;
+  box-shadow:0 10px 35px rgba(0,0,0,.18);
+}
+
+.widget h2,
+.widget h3,
+.widget .title{
+  color:#fff;
+  margin-top:0;
+}
+
+/* BLOG POSTS */
+
+.blog-posts .post-outer{
+  background:#0c1421;
+  border:1px solid #182b42;
+  border-radius:18px;
+  padding:22px;
+  margin-bottom:20px;
+  box-shadow:0 10px 35px rgba(0,0,0,.2);
+}
+
+.post-title,
+.post-title a{
+  color:#fff!important;
+  font-size:26px;
+  line-height:1.3;
+  font-weight:800;
+}
+
+.post-title a:hover{
+  color:#00d9ff!important;
+}
+
+.post-body{
+  color:#c4d0df;
+  font-size:16px;
+}
+
+.post-body img{
+  max-width:100%;
+  height:auto;
+  border-radius:12px;
+}
+
+.post-header,
+.post-footer{
+  color:#8093aa;
+  font-size:13px;
+}
+
+/* SIDEBAR */
+
+.gh-sidebar .widget a{
+  display:block;
+  padding:7px 0;
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+/* SEARCH */
+
+.gh-search{
+  display:flex;
+  margin-bottom:20px;
+}
+
+.gh-search input{
+  flex:1;
+  background:#0d1726;
+  color:#fff;
+  border:1px solid #203650;
+  padding:12px 15px;
+  border-radius:12px 0 0 12px;
+  outline:none;
+}
+
+.gh-search button{
+  border:0;
+  padding:0 18px;
+  border-radius:0 12px 12px 0;
+  background:#009dff;
+  color:#fff;
+  font-weight:bold;
+}
+
+/* FOOTER */
+
+.gh-footer{
+  margin-top:50px;
+  background:#050911;
+  border-top:1px solid #17263a;
+  padding:35px 15px;
+}
+
+.gh-footer-inner{
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+
+.gh-footer-title{
+  font-size:23px;
+  font-weight:bold;
+  color:#fff;
+}
+
+.gh-footer-title span{
+  color:#00d9ff;
+}
+
+.gh-footer p{
+  color:#7f91a7;
+  font-size:13px;
+}
+
+/* FLOATING WHATSAPP */
+
+..gh-floating-wa,
+a[aria-label="WhatsApp"],
+a[href*="wa.me"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+}
+
+/* BACK TOP */
+
+#ghTop{
+  position:fixed;
+  right:18px;
+  bottom:85px;
+  width:42px;
+  height:42px;
+  border:0;
+  border-radius:50%;
+  background:#008cff;
+  color:#fff;
+  cursor:pointer;
+  display:none;
+  z-index:9998;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+  .gh-top{
+    padding:17px 13px;
+  }
+
+  .gh-logo{
+    font-size:21px;
+  }
+
+  .gh-tag{
+    font-size:10px;
+  }
+
+  .gh-wa{
+    padding:9px 12px;
+    font-size:12px;
+  }
+
+  .gh-hero{
+    margin:15px 10px;
+    padding:30px 15px;
+  }
+
+  .gh-hero h1{
+    font-size:30px;
+  }
+
+  .gh-categories{
+    grid-template-columns:repeat(2,1fr);
+    padding:0 10px;
+  }
+
+  .gh-container{
+    display:block;
+    margin-top:20px;
+  }
+
+  .gh-sidebar{
+    margin-top:25px;
+  }
+
+  .post-title,
+  .post-title a{
+    font-size:22px;
+  }
+
+}
+
+/* VERY SMALL */
+
+@media(max-width:400px){
+
+  .gh-categories{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gh-hero h1{
+    font-size:26px;
+  }
+
+}
+.gh-logo {
+  font-size: 55px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    90deg,
+    #00c6ff,
+    #00ff88,
+    #fff200,
+    #ff4d4d,
+    #d500ff,
+    #00c6ff
+  );
+
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: ghColor 5s linear infinite;
+}
+
+@keyframes ghColor {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 400% center;
+  }
+}.gh-logo {
+  font-size: 55px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+
+  background: linear-gradient(
+    90deg,
+    #00c6ff,
+    #00ff88,
+    #fff200,
+    #ff4d4d,
+    #d500ff,
+    #00c6ff
+  );
+
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: ghColor 5s linear infinite;
+}
+
+@keyframes ghColor {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 400% center;
+  }
+}
+
+/* MOBILE */
+@media (max-width:600px) {
+  .gh-logo {
+    font-size: 27px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+  }
+}/* GSM HASAN - PREMIUM SOFTWARE CARDS */
+.gh-categories {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px !important;
+  padding: 12px !important;
+}
+
+.gh-categories > a {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 20px 12px !important;
+  border: 1px solid rgba(0, 195, 255, 0.30) !important;
+  border-radius: 16px !important;
+  background: linear-gradient(145deg, #101e3b, #080f20) !important;
+  color: #eaf7ff !important;
+  text-align: center !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.22),
+              inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  transition: border-color 0.25s ease,
+              box-shadow 0.25s ease,
+              transform 0.25s ease;
+}
+
+.gh-categories > a:hover {
+  border-color: #00d9ff !important;
+  box-shadow: 0 0 18px rgba(0, 217, 255, 0.24);
+  transform: translateY(-4px);
+}
+
+@media (max-width: 768px) {
+  .gh-categories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px !important;
+    padding: 8px !important;
+  }
+
+  .gh-categories > a {
+    padding: 16px 8px !important;
+    border-radius: 13px !important;
+    font-size: 13px !important;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1000px) {
+  .gh-categories {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}/* GSM HASAN PREMIUM UPGRADE */
+
+.gh-categories > a {
+  background: linear-gradient(145deg,#101d38,#071020) !important;
+  border: 1px solid rgba(0,180,255,.35) !important;
+  border-radius: 18px !important;
+  padding: 25px 15px !important;
+  box-shadow: 0 5px 20px rgba(0,120,255,.12) !important;
+  transition: all .35s ease !important;
+  color: #fff !important;
+}
+
+.gh-categories > a:hover {
+  transform: translateY(-7px) !important;
+  border-color: #00d9ff !important;
+  box-shadow: 0 10px 30px rgba(0,180,255,.35) !important;
+  background: linear-gradient(135deg,#102c55,#071020) !important;
+}
+
+.gh-logo {
+  text-shadow: 0 0 15px rgba(0,180,255,.6);
+  letter-spacing: 2px;
+}
+
+a[href*="wa.me"],
+a[href*="whatsapp.com/channel"],
+a[href*="youtube.com"],
+a[href*="t.me"] {
+  transition: .3s ease !important;
+}
+
+a[href*="wa.me"]:hover,
+a[href*="whatsapp.com/channel"]:hover,
+a[href*="youtube.com"]:hover,
+a[href*="t.me"]:hover {
+  filter: brightness(1.2);
+  transform: translateY(-3px);
+}/* ===== GSM HASAN ONLINE COURSE PREMIUM BOX ===== */
+
+.gh-course-box {
+  max-width: 650px;
+  margin: 28px auto;
+  padding: 25px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(145deg,#101f3d,#030812);
+  border: 1px solid #078cff;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0,140,255,.25);
+}
+
+.gh-admission {
+  display: inline-block;
+  background: #073c2a;
+  color: #38ffae;
+  padding: 9px 16px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.gh-course-box h2 {
+  color: #00d9ff;
+  font-size: 30px;
+  margin: 18px 0 5px;
+  font-weight: 900;
+}
+
+.gh-course-box h3 {
+  color: #fff;
+  font-size: 19px;
+}
+
+.gh-course-box p {
+  color: #9bc8ed;
+  line-height: 1.7;
+}
+
+.gh-course-price {
+  color: #00e5ff;
+  font-size: 36px;
+  font-weight: 900;
+  margin: 20px 0;
+}
+
+.gh-course-price small {
+  font-size: 14px;
+}
+
+.gh-course-box h4 {
+  color: #00d9ff;
+  text-align: left;
+}
+
+.gh-course-box ul {
+  text-align: left;
+  line-height: 2.1;
+  color: #d9eaff;
+  padding-left: 25px;
+}
+
+.gh-course-details {
+  background: #102b4c;
+  border: 1px solid #087cff;
+  border-radius: 12px;
+  padding: 15px;
+  line-height: 2;
+  margin: 20px 0;
+  color: #fff;
+}
+
+.gh-course-box > a {
+  display: block;
+  padding: 15px;
+  background: linear-gradient(90deg,#006dff,#00d9ff);
+  color: white !important;
+  font-weight: 900;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+.gh-course-box > a:hover {
+  box-shadow: 0 0 20px #008cff;
+  transform: translateY(-3px);
+}
+
+.gh-course-box > small {
+  display: block;
+  color: #00d9ff;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+@media(max-width:600px) {
+  .gh-course-box {
+    margin: 18px 10px;
+    padding: 18px;
+  }
+}/* ===== GSM HASAN PREMIUM CATEGORY CSS ===== */
+
+.gh-categories {
+  background: linear-gradient(135deg,#020b19,#092344,#031326) !important;
+  border: 1px solid #078bdb !important;
+  border-radius: 20px !important;
+  padding: 22px 14px !important;
+  box-shadow: 0 0 25px rgba(0,150,255,.2) !important;
+}
+
+.gh-categories h2 {
+  color: #20dcff !important;
+  text-shadow: 0 0 15px #008cff;
+  font-weight: 900 !important;
+  letter-spacing: 2px;
+}
+
+.gh-categories p {
+  color: #d5eaff !important;
+}
+
+.gh-categories > div[style*="display:grid"] {
+  display: grid !important;
+  grid-template-columns: repeat(5,minmax(0,1fr)) !important;
+  gap: 13px !important;
+}
+
+.gh-categories > div[style*="background:#0c2948"] {
+  background: linear-gradient(155deg,#123c69,#06162c) !important;
+  border: 1px solid #078bda !important;
+  border-radius: 17px !important;
+  padding: 17px 12px !important;
+  box-shadow: inset 0 0 18px rgba(0,170,255,.12),
+              0 5px 18px rgba(0,0,0,.4) !important;
+  transition: all .3s ease !important;
+}
+
+.gh-categories > div[style*="background:#0c2948"]:hover {
+  transform: translateY(-6px);
+  border-color: #00e5ff !important;
+  box-shadow: 0 0 22px rgba(0,200,255,.4) !important;
+}
+
+.gh-categories h3 {
+  color: #20dcff !important;
+  font-weight: 800 !important;
+  font-size: 15px !important;
+}
+
+.gh-categories a {
+  color: #d9edff !important;
+  text-decoration: none !important;
+  font-size: 13px !important;
+  transition: .2s;
+}
+
+.gh-categories a:hover {
+  color: #00eaff !important;
+  padding-left: 5px;
+}
+
+@media(max-width:1000px) {
+  .gh-categories > div[style*="display:grid"] {
+    grid-template-columns: repeat(3,minmax(0,1fr)) !important;
+  }
+}
+
+@media(max-width:600px) {
+  .gh-categories {
+    padding: 14px 8px !important;
+  }
+  .gh-categories > div[style*="display:grid"] {
+    grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+    gap: 9px !important;
+  }
+  .gh-categories > div[style*="background:#0c2948"] {
+    padding: 12px 8px !important;
+  }
+  .gh-categories h3 {
+    font-size: 12px !important;
+  }
+  .gh-categories a {
+    font-size: 11px !important;
+  }
+}/* ===== GSM HASAN PREMIUM CATEGORY REDESIGN ===== */
+
+/* MAIN OUTER PANEL */
+div[style*="linear-gradient(135deg"][style*="border-radius:16px"] {
+  background: linear-gradient(135deg,#020817,#0a2040,#031225) !important;
+  border: 1px solid #087fc7 !important;
+  border-radius: 22px !important;
+  padding: 25px 16px !important;
+  box-shadow: 0 0 30px rgba(0,160,255,.25) !important;
+}
+
+/* GSM HASAN TITLE */
+div[style*="linear-gradient(135deg"][style*="border-radius:16px"] h2 {
+  color: #19dcff !important;
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  text-shadow: 0 0 15px #00aaff !important;
+  letter-spacing: 2px !important;
+}
+
+div[style*="linear-gradient(135deg"][style*="border-radius:16px"] p {
+  color: #d9edff !important;
+}
+
+/* CATEGORY GRID */
+div[style*="linear-gradient(135deg"][style*="border-radius:16px"] > div[style*="display:grid"] {
+  display: grid !important;
+  grid-template-columns: repeat(5,minmax(0,1fr)) !important;
+  gap: 13px !important;
+}
+
+/* ALL FIVE BOXES */
+div[style*="linear-gradient(135deg"][style*="border-radius:16px"] > div[style*="display:grid"] > div {
+  background: linear-gradient(155deg,#123d70,#07172d) !important;
+  border: 1px solid #078fdf !important;
+  border-radius: 18px !important;
+  padding: 18px 13px !important;
+  box-shadow: inset 0 0 20px rgba(0,160,255,.12),
+              0 5px 20px rgba(0,0,0,.4) !important;
+  transition: all .3s ease !important;
+}
+
+/* HOVER EFFECT */
+div[style*="linear-gradient(135deg"][style*="border-radius:16px"] > div[style*="display:grid"] > div:hover {
+  transform: translateY(-6px) !important;
+  border-color: #00eaff !important;
+  box-shadow: 0 0 24px rgba(0,200,255,.45) !important;
+}
+
+/* CATEGORY HEADINGS */
+div[style*="linear-gradient(135deg"][style*="border-radius:16px"] h3 {
+  color: #20ddff !important;
+  font-weight: 800 !important;
+  font-size: 15px !important;
+  line-height: 1.5 !important;
+}
+
+/* ALL LINKS */
+div[style*="linear-gradient(135deg"][style*="border-radius:16px"] a {
+  color: #e0f1ff !important;
+  text-decoration: none !important;
+  transition: .25s !important;
+}
+
+div[style*="linear-gradient(135deg"][style*="border-radius:16px"] a:hover {
+  color: #00eaff !important;
+  padding-left: 5px !important;
+}
+
+/* TABLET */
+@media(max-width:1000px) {
+  div[style*="linear-gradient(135deg"][style*="border-radius:16px"] > div[style*="display:grid"] {
+    grid-template-columns: repeat(3,minmax(0,1fr)) !important;
+  }
+}
+
+/* MOBILE */
+@media(max-width:600px) {
+  div[style*="linear-gradient(135deg"][style*="border-radius:16px"] {
+    padding: 15px 8px !important;
+  }
+
+  div[style*="linear-gradient(135deg"][style*="border-radius:16px"] > div[style*="display:grid"] {
+    grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+    gap: 9px !important;
+  }
+
+  div[style*="linear-gradient(135deg"][style*="border-radius:16px"] > div[style*="display:grid"] > div {
+    padding: 12px 8px !important;
+  }
+
+  div[style*="linear-gradient(135deg"][style*="border-radius:16px"] h3 {
+    font-size: 12px !important;
+  }
+
+  div[style*="linear-gradient(135deg"][style*="border-radius:16px"] a {
+    font-size: 12px !important;
+  }
+}/* ===== GSM HASAN CYBER PREMIUM BOXES ===== */
+
+/* MAIN PANEL */
+div[style*="linear-gradient(135deg"] {
+  background: linear-gradient(135deg,#020817,#061a36,#020b19) !important;
+  border: 1px solid #00bfff !important;
+  border-radius: 20px !important;
+  padding: 25px 16px !important;
+  box-shadow: 0 0 25px rgba(0,180,255,.25) !important;
+}
+
+/* MAIN TITLE */
+div[style*="linear-gradient(135deg"] h2 {
+  color: #ffffff !important;
+  font-size: 32px !important;
+  font-weight: 900 !important;
+  text-shadow: 0 0 12px #00cfff,0 0 25px #007bff !important;
+  letter-spacing: 2px !important;
+}
+
+div[style*="linear-gradient(135deg"] p {
+  color: #dcefff !important;
+  font-weight: bold !important;
+  letter-spacing: 1px !important;
+}
+
+/* FIVE COLUMN GRID */
+div[style*="display:grid"] {
+  grid-template-columns: repeat(5,minmax(0,1fr)) !important;
+  gap: 13px !important;
+}
+
+/* PREMIUM CARDS */
+div[style*="background:#0c2948"] {
+  position: relative !important;
+  background: linear-gradient(160deg,#064b91,#061a37 65%,#020d20) !important;
+  border: 2px solid #08bfff !important;
+  border-radius: 19px !important;
+  padding: 16px 13px !important;
+  min-height: 400px !important;
+  box-shadow: 0 0 12px rgba(0,174,255,.35),
+              inset 0 0 20px rgba(0,120,255,.12) !important;
+  transition: all .3s ease !important;
+}
+
+/* HOVER GLOW */
+div[style*="background:#0c2948"]:hover {
+  transform: translateY(-6px) !important;
+  border-color: #00f0ff !important;
+  box-shadow: 0 0 25px #008cff !important;
+}
+
+/* CATEGORY HEADING */
+div[style*="background:#0c2948"] h3 {
+  background: linear-gradient(135deg,#020b1c,#101d38) !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  font-size: 15px !important;
+  font-weight: 900 !important;
+  line-height: 1.5 !important;
+  padding: 12px 5px !important;
+  border: 1px solid #00cfff !important;
+  border-radius: 30px !important;
+  box-shadow: 0 0 12px rgba(0,190,255,.3) !important;
+  margin: 0 0 17px !important;
+}
+
+/* CATEGORY LINKS */
+div[style*="background:#0c2948"] a {
+  display: block !important;
+  color: #f0f8ff !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  line-height: 1.6 !important;
+  text-decoration: none !important;
+  padding: 5px 0 !important;
+  transition: .25s !important;
+}
+
+/* BLUE ARROWS */
+div[style*="background:#0c2948"] a:before {
+  content: "❯❯";
+  color: #00e5ff !important;
+  font-size: 12px !important;
+  margin-right: 9px !important;
+  font-weight: 900 !important;
+}
+
+/* LINK HOVER */
+div[style*="background:#0c2948"] a:hover {
+  color: #00f0ff !important;
+  padding-left: 6px !important;
+}
+
+/* FIRST CARD */
+div[style*="background:#0c2948"]:nth-child(1) {
+  border-color: #00cfff !important;
+}
+
+/* SECOND CARD */
+div[style*="background:#0c2948"]:nth-child(2) {
+  border-color: #ffd000 !important;
+}
+
+/* THIRD CARD */
+div[style*="background:#0c2948"]:nth-child(3) {
+  border-color: #00e8a0 !important;
+}
+
+/* FOURTH CARD */
+div[style*="background:#0c2948"]:nth-child(4) {
+  border-color: #ff22bc !important;
+}
+
+/* FIFTH CARD */
+div[style*="background:#0c2948"]:nth-child(5) {
+  border-color: #a855ff !important;
+}
+
+/* TABLET */
+@media(max-width:1000px) {
+  div[style*="display:grid"] {
+    grid-template-columns: repeat(3,minmax(0,1fr)) !important;
+  }
+}
+
+/* MOBILE */
+@media(max-width:600px) {
+  div[style*="linear-gradient(135deg"] {
+    padding: 15px 8px !important;
+  }
+
+  div[style*="display:grid"] {
+    grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+    gap: 9px !important;
+  }
+
+  div[style*="background:#0c2948"] {
+    min-height: 300px !important;
+    padding: 12px 8px !important;
+  }
+
+  div[style*="background:#0c2948"] h3 {
+    font-size: 12px !important;
+  }
+
+  div[style*="background:#0c2948"] a {
+    font-size: 11px !important;
+  }
+}/* ===== FIX ARROW SYMBOL ===== */
+
+div[style*="background:#0c2948"] a:before {
+  content: "\276F\276F" !important;
+  color: #00eaff !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  margin-right: 10px !important;
+}
+
+/* REMOVE OLD BROKEN SYMBOL */
+div[style*="background:#0c2948"] a {
+  text-decoration: none !important;
+}/* ===== GSM HASAN PREMIUM NEON HERO ===== */
+
+.gh-hero {
+  max-width: 1250px;
+  margin: 25px auto;
+  padding: 55px 20px;
+  text-align: center;
+  border: 1px solid #008cff;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at 50% 40%, #103b70, transparent 65%),
+    linear-gradient(135deg,#020817,#061a36,#020817);
+  box-shadow: 0 0 30px rgba(0,140,255,.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.gh-hero h1 {
+  font-size: 55px;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: 0 0 15px #008cff;
+}
+
+.gh-hero h1 span {
+  color: #00d9ff;
+  text-shadow: 0 0 20px #00cfff;
+}
+
+.gh-hero p {
+  color: #d9edff;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 15px 0 25px;
+}
+
+.gh-hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.gh-hero-btn {
+  display: inline-block;
+  padding: 17px 27px;
+  min-width: 230px;
+  border: 2px solid #00cfff;
+  border-radius: 50px;
+  color: #fff !important;
+  font-weight: 900;
+  font-size: 16px;
+  text-decoration: none !important;
+  background: linear-gradient(90deg,#003cff,#008cff);
+  box-shadow: 0 0 12px #008cff,
+              0 0 25px rgba(0,180,255,.4);
+  transition: .3s ease;
+}
+
+.gh-hero-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00e5ff,
+              0 0 35px #008cff;
+  background: linear-gradient(90deg,#006dff,#00d9ff);
+}
+
+@media(max-width:600px) {
+  .gh-hero {
+    margin: 15px 10px;
+    padding: 35px 12px;
+  }
+
+  .gh-hero h1 {
+    font-size: 34px;
+    letter-spacing: 1px;
+  }
+
+  .gh-hero p {
+    font-size: 12px;
+  }
+
+  .gh-hero-buttons {
+    gap: 13px;
+  }
+
+  .gh-hero-btn {
+    width: 95%;
+    min-width: 0;
+    font-size: 14px;
+    padding: 15px 10px;
+  }
+}/* ===== GSM HASAN CYBER PREMIUM DESIGN ===== */
+
+.gh-cyber {
+  max-width: 1250px !important;
+  margin: 20px auto !important;
+  padding: 65px 15px 55px !important;
+  text-align: center !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border: 1px solid #005eff !important;
+  border-radius: 0 !important;
+
+  background:
+    radial-gradient(ellipse at center,rgba(0,100,255,.28),transparent 65%),
+    repeating-linear-gradient(0deg,transparent 0px,transparent 95px,rgba(0,174,255,.07) 96px),
+    linear-gradient(135deg,#020719,#071b45,#02091b) !important;
+
+  box-shadow: 0 0 35px rgba(0,100,255,.22) !important;
+}
+
+/* Circuit glow lines */
+
+.gh-cyber:before,
+.gh-cyber:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#008cff,#00eaff,transparent);
+  box-shadow: 0 0 12px #008cff;
+}
+
+.gh-cyber:before { top: 25%; }
+.gh-cyber:after { bottom: 12%; }
+
+/* MAIN LOGO */
+
+.gh-cyber h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 76px !important;
+  font-weight: 900 !important;
+  letter-spacing: 3px !important;
+  color: white !important;
+  margin: 0 !important;
+  text-shadow: 0 0 20px #008cff;
+}
+
+/* GSM HASAN PERFECT LOGO SIZE */
+
+.gh-cyber h1 {
+  font-size: 52px !important;
+  font-weight: 900 !important;
+  letter-spacing: 1px !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(0,140,255,.5) !important;
+}
+
+.gh-cyber h1 span {
+  color: #00cfff !important;
+  text-shadow: 0 0 12px rgba(0,200,255,.6) !important;
+}
+
+@media(max-width:700px) {
+  .gh-cyber h1 {
+    font-size: 32px !important;
+    letter-spacing: 1px !important;
+  }
+}
+}
+
+/* SERVICES */
+
+.gh-cyber .gh-services {
+  position: relative;
+  z-index: 2;
+  color: #fff !important;
+  font-size: 20px !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px;
+  margin: 12px 0 32px !important;
+}
+
+/* BUTTONS */
+
+.gh-cyber .gh-hero-buttons {
+  position: relative;
+  z-index: 3;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gh-cyber .gh-neon-btn {
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  min-width: 460px;
+  padding: 17px 22px !important;
+  border: 3px solid #00cfff !important;
+  border-radius: 50px !important;
+  color: #fff !important;
+  background: linear-gradient(90deg,#001b83,#004cff,#002d94) !important;
+  font-size: 21px !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+  box-shadow: 0 0 12px #008cff,
+              0 0 25px #006cff,
+              inset 0 0 15px rgba(0,160,255,.2);
+  transition: .3s ease;
+}
+
+.gh-cyber .gh-neon-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #00eaff,
+              0 0 40px #008cff;
+}
+
+.gh-cyber .gh-wa-btn svg {
+  flex-shrink: 0;
+}
+
+.gh-cyber .gh-tools-btn {
+  border-color: #00dfff !important;
+}
+
+.gh-cyber .gh-gear {
+  font-size: 38px;
+  color: white;
+}
+
+/* BOTTOM BRANDING */
+
+.gh-cyber-footer {
+  max-width: 1250px;
+  margin: 25px auto;
+  padding: 18px 10px;
+  text-align: center;
+  color: #00eaff;
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0 0 15px #008cff;
+  border-top: 2px solid #006cff;
+  border-bottom: 2px solid #006cff;
+}
+
+/* MOBILE */
+
+@media(max-width:700px) {
+  .gh-cyber {
+    margin: 12px 8px !important;
+    padding: 42px 10px !important;
+  }
+
+  .gh-cyber h1 {
+    font-size: 38px !important;
+    letter-spacing: 1px !important;
+  }
+
+  .gh-cyber .gh-services {
+    font-size: 11px !important;
+    line-height: 1.8;
+  }
+
+  .gh-cyber .gh-hero-buttons {
+    flex-direction: column !important;
+    gap: 16px;
+  }
+
+  .gh-cyber .gh-neon-btn {
+    min-width: 0 !important;
+    width: 96% !important;
+    padding: 14px 8px !important;
+    font-size: 13px !important;
+    gap: 9px;
+  }
+
+  .gh-cyber .gh-gear {
+    font-size: 27px;
+  }
+
+  .gh-cyber-footer {
+    font-size: 23px;
+  }
+}/* ===== GSM HASAN CYBER PREMIUM DESIGN ===== */
+
+.gh-hero {
+  max-width:1250px !important;
+  margin:20px auto !important;
+  padding:55px 15px !important;
+  text-align:center !important;
+  border:1px solid #087cff !important;
+  border-radius:0 !important;
+  background:
+    radial-gradient(ellipse at 50% 50%,rgba(0,90,255,.30),transparent 65%),
+    repeating-linear-gradient(0deg,transparent 0px,transparent 75px,rgba(0,150,255,.08) 76px),
+    linear-gradient(135deg,#020817,#061b48,#020817) !important;
+  box-shadow:0 0 30px rgba(0,120,255,.25) !important;
+  position:relative;
+  overflow:hidden;
+}
+
+/* CIRCUIT EFFECT */
+
+.gh-hero:before,
+.gh-hero:after {
+  content:"";
+  position:absolute;
+  left:0;
+  width:100%;
+  height:2px;
+  background:linear-gradient(90deg,transparent,#008cff,#00eaff,transparent);
+  box-shadow:0 0 15px #008cff;
+}
+
+.gh-hero:before {top:20%;}
+.gh-hero:after {bottom:10%;}
+
+/* GSM HASAN LOGO */
+
+.gh-hero h1 {
+  position:relative;
+  z-index:2;
+  font-size:52px !important;
+  font-weight:900 !important;
+  letter-spacing:1px !important;
+  line-height:1.2 !important;
+  margin:0 !important;
+  color:#ffffff !important;
+  text-shadow:0 0 12px #008cff !important;
+}
+
+.gh-hero h1 span {
+  color:#00dfff !important;
+  text-shadow:0 0 15px #00cfff !important;
+}
+
+/* SERVICES TEXT */
+
+.gh-hero p {
+  position:relative;
+  z-index:2;
+  color:#ffffff !important;
+  font-size:17px !important;
+  font-weight:800 !important;
+  letter-spacing:1px;
+  margin:15px 0 28px !important;
+}
+
+/* NEON BUTTONS */
+
+.gh-hero .gh-btn {
+  position:relative;
+  z-index:3;
+  display:inline-flex !important;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  min-width:260px;
+  padding:17px 23px !important;
+  margin:8px !important;
+  border:2px solid #00cfff !important;
+  border-radius:50px !important;
+  background:linear-gradient(90deg,#001d91,#005cff,#001d91) !important;
+  color:#ffffff !important;
+  font-size:16px !important;
+  font-weight:900 !important;
+  box-shadow:0 0 12px #008cff,
+             0 0 25px rgba(0,140,255,.5) !important;
+  transition:.3s ease !important;
+}
+
+.gh-hero .gh-btn:hover {
+  transform:translateY(-4px);
+  box-shadow:0 0 20px #00eaff,
+             0 0 35px #008cff !important;
+}
+
+/* WHATSAPP BUTTON */
+
+.gh-hero a[href*="wa.me"] {
+  border-color:#25d366 !important;
+  background:linear-gradient(90deg,#006b35,#13c65d,#006b35) !important;
+  box-shadow:0 0 15px rgba(37,211,102,.6) !important;
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+
+  .gh-hero {
+    margin:12px 8px !important;
+    padding:38px 10px !important;
+  }
+
+  .gh-hero h1 {
+    font-size:32px !important;
+  }
+
+  .gh-hero p {
+    font-size:11px !important;
+    line-height:1.8;
+  }
+
+  .gh-hero .gh-btn {
+    width:95% !important;
+    min-width:0 !important;
+    font-size:13px !important;
+    padding:14px 8px !important;
+  }
+}/* SOFTWARE TOOLS DROPDOWN */
+
+.gh-tools-menu {
+  display:inline-block;
+  position:relative;
+  margin:5px;
+}
+
+.gh-tools-menu summary {
+  cursor:pointer;
+  list-style:none;
+}
+
+.gh-tools-menu summary::-webkit-details-marker {
+  display:none;
+}
+
+.gh-tools-dropdown {
+  position:absolute;
+  top:110%;
+  left:50%;
+  transform:translateX(-50%);
+  width:270px;
+  padding:10px;
+  background:#07152c;
+  border:1px solid #00cfff;
+  border-radius:14px;
+  box-shadow:0 0 20px #008cff;
+  z-index:9999;
+}
+
+.gh-tools-dropdown a {
+  display:block;
+  padding:13px;
+  margin:6px 0;
+  color:white !important;
+  background:linear-gradient(90deg,#063c79,#07152e);
+  border:1px solid #008cff;
+  border-radius:9px;
+  text-decoration:none !important;
+  font-weight:bold;
+}
+
+.gh-tools-dropdown a:hover {
+  background:#005cff;
+  color:#fff !important;
+}
+
+@media(max-width:600px) {
+  .gh-tools-dropdown {
+    width:250px;
+  }
+}.gh-tools-menu {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+}
+
+.gh-tools-menu summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.gh-tools-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.gh-tools-dropdown {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
+  padding: 10px;
+  background: #07152c;
+  border: 1px solid #00cfff;
+  border-radius: 14px;
+  box-shadow: 0 0 20px #008cff;
+  z-index: 999999;
+}
+
+.gh-tools-dropdown a {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative;
+  padding: 13px;
+  margin: 6px 0;
+  color: white !important;
+  background: linear-gradient(90deg,#063c79,#07152e);
+  border: 1px solid #008cff;
+  border-radius: 9px;
+  text-decoration: none !important;
+  font-weight: bold;
+}
+
+.gh-tools-dropdown a:hover {
+  background: #005cff;
+  color: white !important;
+}
+
+.gh-tools-menu[open] .gh-tools-dropdown {
+  display: block !important;
+}
+
+@media(max-width:600px) {
+  .gh-tools-dropdown {
+    width: 250px;
+  }
+}/* SOFTWARE WORK TOOLS FIX */
+.gh-hero {
+  position: relative !important;
+  overflow: visible !important;
+  z-index: 99999 !important;
+}
+
+.gh-tools-menu {
+  position: relative !important;
+  z-index: 999999 !important;
+}
+
+.gh-tools-menu[open] {
+  z-index: 999999 !important;
+}
+
+.gh-tools-dropdown {
+  position: absolute !important;
+  top: 100% !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: block !important;
+  min-height: 150px;
+  height: auto !important;
+  overflow: visible !important;
+  z-index: 9999999 !important;
+}<section class='gh-premium-hero'>
+  <div class='gh-premium-tag'>✦ PROFESSIONAL MOBILE SOFTWARE SOLUTIONS ✦</div>
+
+  <h1>GSM <span>HASAN</span></h1>
+
+  <p class='gh-premium-subtitle'>
+    FRP • FLASHING • UNLOCKING • EDL • IMEI • ACTIVATION
+  </p>
+
+  <div class='gh-premium-actions'>
+    <a class='gh-premium-wa' href='https://wa.me/919794390484'>
+      <span>●</span> ORDER ON WHATSAPP
+    </a>
+
+    <details class='gh-premium-menu'>
+      <summary>⚙ SOFTWARE WORK TOOLS</summary>
+      <div class='gh-premium-dropdown'>
+        <a href='https://hasan800.blogspot.com/p/usb-197-gsm-hasan.html'>🔌 USB 197 GSM HASAN</a>
+        <a href='https://hasan800.blogspot.com/p/moto-info-tool.html'>📱 MOTO INFO TOOL</a>
+        <a href='https://hasan800.blogspot.com/p/realme-one-click-frp-tools.html'>🔓 REALME ONE CLICK FRP TOOLS</a>
+      </div>
+    </details>
+  </div>
+</section>/* GSM HASAN PREMIUM HEADER */
+.gh-premium-hero {
+  position: relative;
+  z-index: 99999;
+  overflow: visible !important;
+  text-align: center;
+  padding: 48px 15px 55px;
+  margin: 18px auto;
+  max-width: 1250px;
+  background: linear-gradient(135deg,#07152d,#061027,#102d52);
+  border: 1px solid rgba(0,195,255,.35);
+  border-radius: 22px;
+  box-shadow: 0 10px 35px rgba(0,145,255,.15);
+}
+
+.gh-premium-tag {
+  display: inline-block;
+  color: #69eaff;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 8px 15px;
+  border: 1px solid rgba(0,210,255,.35);
+  border-radius: 30px;
+  background: rgba(0,160,255,.08);
+}
+
+.gh-premium-hero h1 {
+  margin: 20px 0 8px;
+  font-size: 48px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.gh-premium-hero h1 span {
+  color: #00d9ff;
+  text-shadow: 0 0 18px rgba(0,210,255,.6);
+}
+
+.gh-premium-subtitle {
+  color: #d5e8ff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 12px 0 30px;
+}
+
+.gh-premium-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.gh-premium-wa,
+.gh-premium-menu summary {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 52px;
+  padding: 0 25px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none !important;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.gh-premium-wa {
+  color: #fff !important;
+  background: linear-gradient(110deg,#00a83b,#16d65a);
+  box-shadow: 0 0 18px rgba(0,220,80,.3);
+}
+
+.gh-premium-wa span {
+  margin-right: 9px;
+}
+
+.gh-premium-menu {
+  position: relative;
+  z-index: 999999;
+}
+
+.gh-premium-menu summary {
+  list-style: none;
+  color: #fff;
+  background: linear-gradient(110deg,#0066d9,#00bfff);
+  box-shadow: 0 0 18px rgba(0,170,255,.35);
+}
+
+.gh-premium-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.gh-premium-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 270px;
+  padding: 10px;
+  background: #07152c;
+  border: 1px solid #00cfff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px #000;
+  z-index: 9999999;
+}
+
+.gh-premium-dropdown a {
+  display: block !important;
+  padding: 13px 10px;
+  margin: 5px 0;
+  color: #fff !important;
+  background: #102b4e;
+  border: 1px solid #1269a8;
+  border-radius: 9px;
+  text-decoration: none !important;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gh-premium-dropdown a:hover {
+  background: #0066d9;
+}
+
+@media(max-width:600px) {
+  .gh-premium-hero {
+    padding: 35px 12px 42px;
+    margin: 12px 8px;
+  }
+  .gh-premium-hero h1 {
+    font-size: 34px;
+  }
+  .gh-premium-subtitle {
+    font-size: 10px;
+    line-height: 1.8;
+  }
+  .gh-premium-actions {
+    flex-direction: column;
+  }
+  .gh-premium-wa,
+  .gh-premium-menu summary {
+    width: 100%;
+    min-height: 48px;
+  }
+  .gh-premium-menu {
+    width: 100%;
+  }
+}/* REMOVE BLUE LINE ABOVE GSM HASAN */
+
+.gh-hero.gh-cyber::before,
+.gh-hero.gh-cyber::after,
+.gh-hero.gh-cyber h1::before,
+.gh-hero.gh-cyber h1::after {
+  display: none !important;
+  content: none !important;
+}
+
+.gh-hero.gh-cyber {
+  border-top: none !important;
+}
+  ]]></b:skin>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<!-- GSM HASAN MOVING LINE START -->
+<style>
+.gh-moving-line {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: linear-gradient(90deg, #050b20, #003cff, #00d4ff, #050b20);
+  border-top: 1px solid #00d4ff;
+  border-bottom: 1px solid #00d4ff;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+.gh-moving-text {
+  display: inline-block;
+  padding-left: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00d4ff;
+  animation: ghMove 25s linear infinite;
+}
+@keyframes ghMove {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}/* GSM HASAN AUTO COLOR ANIMATION */
+
+.gh-rainbow-name {
+  display: inline-block;
+  animation: ghRainbow 4s linear infinite;
+  font-weight: 900;
+}
+
+@keyframes ghRainbow {
+  0% { color: #00eaff; }
+  25% { color: #00ff80; }
+  50% { color: #ffff00; }
+  75% { color: #ff00cc; }
+  100% { color: #00eaff; }
+}
+</style>
+
+<div class='gh-moving-line'>
+  <div class='gh-moving-text'>
+    &#9733; <span class='gh-rainbow-name'>GSM HASAN</span> &#9733; ALL SOFTWARE SOLUTIONS &#9733; FRP &#9733; FLASHING &#9733; UNLOCKING &#9733; EDL &#9733; IMEI &#9733; OPPO &#9733; VIVO &#9733; REALME &#9733; SAMSUNG &#9733; XIAOMI &#9733; FAST WORK &#9733; BEST PRICE &#9733; PROFESSIONAL REMOTE SUPPORT &#9733; WHATSAPP: 9794390484 &#9733; YOUR TRUST, OUR SERVICE &#9733;
+  </div>
+</div>
+<!-- GSM HASAN MOVING LINE END -->
+  
+<!-- GSM HASAN SOCIAL CHANNEL BUTTONS START -->
+<style>
+.gh-social-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 4px;
+  background: #07111f;
+}
+.gh-social-row a {
+  flex: 1 1 0;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff !important;
+  padding: 10px 3px;
+  border-radius: 24px;
+  font-size: 11px;
+  line-height: 1.3;
+  font-weight: bold;
+  text-decoration: none !important;
+  overflow-wrap: anywhere;
+}
+.gh-social-wa { background: #25D366; }
+.gh-social-yt { background: #ff0000; }
+.gh-social-tg { background: #229ED9; }
+
+@media (max-width: 360px) {
+  .gh-social-row { gap: 4px; padding-left: 2px; padding-right: 2px; }
+  .gh-social-row a { font-size: 9px; padding: 9px 2px; }
+}
+</style>
+
+<div class='gh-social-row'>
+  <a class='gh-social-wa' href='https://chat.whatsapp.com/CCVsrCD5alrDfHwJlHsZZn?s=cl&amp;p=a&amp;iam=2' rel='noopener noreferrer' target='_blank'>JOIN OUR WHATSAPP GROUP</a>
+  <a class='gh-social-yt' href='https://www.youtube.com/@gsmhasan3111' rel='noopener noreferrer' target='_blank'>JOIN OUR YOUTUBE CHANNEL</a>
+  <a class='gh-social-tg' href='https://t.me/+2_VM-C4g4i45OTFl' rel='noopener noreferrer' target='_blank'>JOIN OUR TELEGRAM CHANNEL</a>
+  <a class='gh-social-wa' href='https://whatsapp.com/channel/0029Vaf0aR4FSAswLfdWmN10' rel='noopener noreferrer' target='_blank'>JOIN OUR WHATSAPP CHANNEL</a>
+</div>
+<!-- GSM HASAN SOCIAL CHANNEL BUTTONS END -->
+
+<!-- HERO -->
+
+<!-- GSM HASAN PREMIUM CYBER HERO -->
+
+<section class='gh-hero gh-cyber'>
+
+  <h1>GSM <span>HASAN</span></h1>
+
+  <p class='gh-services'>
+    FRP &#8226; FLASHING &#8226; UNLOCKING
+    &#8226; EDL &#8226; IMEI &#8226; ACTIVATION
+  </p>
+
+  <div class='gh-hero-buttons'>
+
+    <a class='gh-neon-btn gh-wa-btn' href='https://wa.me/919794390484' target='_blank'>
+<svg height='20' viewBox='0 0 448 400' width='10' xmlns='http://www.w3.org/2000/svg'>
+        <path d='M380.9 97.1C339 55.1 283.2 32 224 32 101.5 32 2 131.5 2 254c0 39.2 10.3 77.4 29.9 111.1L0 480l117.8-30.9c32.4 17.7 68.9 27 106.2 27h.1c122.4 0 223.9-99.5 223.9-222 0-59.2-25.1-115.9-67.1-157z' fill='#25D366'/>
+      </svg>
+      ORDER ON WHATSAPP
+    </a>
+    <div class='gh-stats'>
+  <div><strong>5000+</strong><span>Customers</span></div>
+  <div><strong>1000+</strong><span>Tools</span></div>
+  <div><strong>24/7</strong><span>Support</span></div>
+</div>
+
+    <!-- SOFTWARE WORK TOOLS MENU -->
+
+<details class='gh-tools-menu'>
+
+<summary class='gh-btn'>
+&#9881; SOFTWARE WORK TOOLS
+</summary>
+
+<div class='gh-tools-dropdown'>
+
+<a href='https://hasan800.blogspot.com/p/usb-197-gsm-hasan.html'>
+🔌 USB 197 GSM HASAN
+</a>
+
+<a href='https://hasan800.blogspot.com/p/moto-info-tool.html'>
+📱 MOTO INFO TOOL
+</a>
+
+<a href='https://hasan800.blogspot.com/p/realme-one-click-frp-tools.html'>
+🔓 REALME ONE CLICK FRP TOOLS
+</a>
+
+</div>
+</details>
+
+<!-- END SOFTWARE WORK TOOLS -->&gt;
+
+  </div>
+
+</section>
+
+<!-- 
+ 
+--><style>
+
+/* ===== GSM HASAN PREMIUM SOFTWARE PANEL ===== */
+
+.gh-categories {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+  padding: 22px 15px !important;
+  max-width: 1250px;
+  margin: 20px auto !important;
+}
+
+.gh-categories .gh-cat {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 105px !important;
+  padding: 20px 12px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  color: #ffffff !important;
+
+  background:
+    linear-gradient(145deg,#152b50,#080e1d 65%,#101d36) !important;
+
+  border: 1px solid rgba(0,174,255,.38) !important;
+  border-radius: 16px !important;
+
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  letter-spacing: .5px !important;
+  line-height: 1.7 !important;
+
+  box-shadow:
+    0 7px 18px rgba(0,0,0,.4),
+    inset 0 1px 1px rgba(255,255,255,.08) !important;
+
+  transition: all .35s ease !important;
+}
+
+.gh-categories .gh-cat:hover {
+  transform: translateY(-7px) scale(1.02) !important;
+  background: linear-gradient(135deg,#063b70,#07152d) !important;
+  border-color: #00d9ff !important;
+
+  box-shadow:
+    0 10px 30px rgba(0,174,255,.30),
+    0 0 12px rgba(0,174,255,.20) !important;
+
+  color: #00e5ff !important;
+}
+
+/* PREMIUM SEARCH BOX */
+
+.gh-search {
+  max-width: 850px !important;
+  margin: 25px auto !important;
+  padding: 12px !important;
+  background: linear-gradient(135deg,#101d36,#050a14) !important;
+  border: 1px solid rgba(0,174,255,.4) !important;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 25px rgba(0,100,255,.15) !important;
+}
+
+.gh-search form {
+  gap: 10px !important;
+}
+
+.gh-search input {
+  min-width: 0 !important;
+  flex: 1 !important;
+  padding: 15px !important;
+  border-radius: 12px !important;
+  border: 1px solid #23466e !important;
+  background: #080f1e !important;
+  color: white !important;
+  outline: none !important;
+  font-size: 14px !important;
+}
+
+.gh-search input:focus {
+  border-color: #00d9ff !important;
+  box-shadow: 0 0 12px rgba(0,217,255,.2) !important;
+}
+
+.gh-search button {
+  padding: 0 25px !important;
+  border: none !important;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg,#007bff,#00d9ff) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  cursor: pointer !important;
+  transition: .3s !important;
+}
+
+.gh-search button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 18px #008cff;
+}
+
+/* TABLET */
+
+@media(max-width:900px) {
+  .gh-categories {
+    grid-template-columns: repeat(3,minmax(0,1fr)) !important;
+  }
+}
+
+/* MOBILE */
+
+@media(max-width:600px) {
+  .gh-categories {
+    grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+    gap: 11px !important;
+    padding: 12px 9px !important;
+  }
+
+  .gh-categories .gh-cat {
+    min-height: 90px !important;
+    padding: 12px 7px !important;
+    font-size: 11px !important;
+    border-radius: 13px !important;
+  }
+
+  .gh-search {
+    margin: 15px 10px !important;
+  }
+
+  .gh-search button {
+    padding: 0 14px !important;
+    font-size: 11px !important;
+  }
+}
+
+</style>
+
+
+
+<!-- MAIN -->
+
+<div class='gh-container'>
+
+  <main class='gh-main'>
+
+    <b:section class='main' id='main' maxwidgets='1' showaddelement='no'>
+      <b:widget id='Blog1' locked='true' title='ब्लॉग संदेश' type='Blog' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+          <b:widget-setting name='commentLabel'>$type={blogger}</b:widget-setting>
+          <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+          <b:widget-setting name='authorLabel'>By</b:widget-setting>
+          <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+          <b:widget-setting name='postLocationLabel'>Location:</b:widget-setting>
+          <b:widget-setting name='showAuthor'>false</b:widget-setting>
+          <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+          <b:widget-setting name='timestampLabel'>-</b:widget-setting>
+          <b:widget-setting name='reactionsLabel'/>
+          <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
+          <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+          <b:widget-setting name='showLabels'>true</b:widget-setting>
+          <b:widget-setting name='showLocation'>false</b:widget-setting>
+          <b:widget-setting name='postLabelsLabel'>Tags:</b:widget-setting>
+          <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+          <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+          <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+          <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+          <b:widget-setting name='showReactions'>false</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main' var='top'>
+          <b:if cond='data:blog.pageType == &quot;index&quot;'>
+  <div style='background:linear-gradient(135deg,#06152e,#071d3c);border:1px solid #087fba;border-radius:16px;padding:18px;margin:15px 0;box-shadow:0 0 18px rgba(0,180,255,.18);'>
+
+    <h2 style='text-align:center;color:#00d9ff;font-size:25px;font-weight:900;margin:8px 0;'>&#9733; GSM HASAN &#9733;</h2>
+    <p style='text-align:center;color:#ffffff;font-size:13px;margin:0 0 20px;'>ALL MOBILE SOFTWARE SOLUTIONS</p>
+
+    <div style='display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:13px;'>
+
+      <div style='background:#0c2948;border:1px solid #087fba;border-radius:12px;padding:14px;'>
+        <h3 style='color:#00d9ff;'>💻 MOBILE SOFTWARE TOOLS</h3>
+        <a href='https://hasan800.blogspot.com/p/usb-197-gsm-hasan.html'>USB 197 GSM HASAN</a><br/>
+        <a href='https://hasan800.blogspot.com/p/usb-redirector-197-unlock-tool-amt-tool.html'>USB Redirector 197 + Unlock Tool + AMT</a><br/>
+        <a href='https://hasan800.blogspot.com/p/u-tool-and-amt.html'>U Tool and AMT</a><br/>
+        <a href='https://hasan800.blogspot.com/p/android-multi-tool.html'>Android Multi Tool</a><br/>
+        <a href='https://hasan800.blogspot.com/p/i-phone-online-tools.html'>iPhone Online Tools</a><br/>
+        <a href='https://hasan800.blogspot.com/p/online-tools.html'>Online Tools</a><br/>
+        <a href='https://hasan800.blogspot.com/p/online-work-tools.html'>Online Work Tools</a><br/>
+        <a href='https://hasan800.blogspot.com/p/all-tools-activations-credtis.html'>All Tools Activations &amp; Credits</a>
+      </div>
+
+      <div style='background:#0c2948;border:1px solid #087fba;border-radius:12px;padding:14px;'>
+        <h3 style='color:#00d9ff;'>🛡&#65039; FRP &amp; ACCOUNT TOOLS</h3>
+        <a href='https://hasan800.blogspot.com/p/mi-account-online-tool.html'>Mi Account Online Tool</a><br/>
+        <a href='https://hasan800.blogspot.com/p/sam-frp-online-tools.html'>Sam FRP Online Tools</a><br/>
+        <a href='https://hasan800.blogspot.com/p/sm-android-11-frp-bypass-tool.html'>SM Android 11 FRP Bypass Tool</a><br/>
+        <a href='https://hasan800.blogspot.com/p/samsung-frp-version-list.html'>Samsung FRP Version List</a><br/>
+        <a href='https://hasan800.blogspot.com/p/mi-account-remove-files-free-by-gsm.html'>Mi Account Remove Files</a><br/>
+        <a href='https://hasan800.blogspot.com/p/frp-tools-by-gsm-hasan.html'>FRP Tools By GSM HASAN</a><br/>
+        <a href='https://hasan800.blogspot.com/p/all-crack-tools-by-gsm-hasan.html'>All Crack Tools</a>
+      </div>
+
+      <div style='background:#0c2948;border:1px solid #087fba;border-radius:12px;padding:14px;'>
+        <h3 style='color:#00d9ff;'>📁 DRIVERS &amp; LATEST FILES</h3>
+        <a href='https://hasan800.blogspot.com/p/lib-usb-driver.html'>Lib USB Driver</a><br/>
+        <a href='https://hasan800.blogspot.com/p/mtk-usb-drivers.html'>All USB Drivers</a><br/>
+        <a href='https://hasan800.blogspot.com/p/latest-files.html'>Latest Files</a><br/>
+        <a href='https://hasan800.blogspot.com/p/my-software-data.html'>My Software Data</a><br/>
+        <a href='https://hasan800.blogspot.com/p/all-jio-mobiles-boot-key-by-gsm-hasan.html'>All Jio Mobiles Boot Keys</a>
+      </div>
+
+      
+
+      <div style='background:#0c2948;border:1px solid #087fba;border-radius:12px;padding:14px;'>
+        <h3 style='color:#00d9ff;'>📱 CONTACT &amp; SOCIAL MEDIA</h3>
+        
+        <a href='https://hasan800.blogspot.com/p/whatsapp-number.html'>WhatsApp Number</a><br/>
+        
+        <a href='https://hasan800.blogspot.com/p/youtubecom.html'>YouTube Channel GSM HASAN</a>
+        
+          <a href='https://hasan800.blogspot.com/p/namaz-tarjuma-hindi-me.html'>Namaz Tarjuma Hindi</a><br/>
+        
+        
+        <a href='https://hasan800.blogspot.com/p/terms-of-services.html'>हम&#2366;र&#2375; ब&#2366;र&#2375; म&#2375;&#2306;</a>
+        
+        
+      </div>
+
+      <div style='background:#0c2948;border:1px solid #087fba;border-radius:12px;padding:14px;'>
+        <h3 style='color:#00d9ff;'>🌐 OTHER PAGES</h3>
+        <a href='https://hasan800.blogspot.com/p/subscribe.html'>SAMRAT MOBILE SHOP</a><br/>
+      
+        <a href='https://hasan800.blogspot.com/p/realme-one-click-frp-tools.html'>Realme One Click FRP Tools</a><br/>
+        <a href='https://hasan800.blogspot.com/p/moto-info-tool.html'>Moto Info Tool</a><br/>
+        
+        
+      </div>
+
+    </div>
+  </div>
+</b:if>
+  <b:if cond='!data:mobile'>
+    <!-- posts -->
+    <div class='blog-posts hfeed'>
+
+      <b:include data='top' name='status-message'/>
+
+      <b:loop values='data:posts' var='post'>
+        <b:if cond='data:post.isDateStart and not data:post.isFirstPost'>
+          &lt;/div&gt;&lt;/div&gt;
+        </b:if>
+        <b:if cond='data:post.isDateStart'>
+          &lt;div class=&quot;date-outer&quot;&gt;
+        </b:if>
+        <b:if cond='data:post.dateHeader'>
+          <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+        </b:if>
+        <b:if cond='data:post.isDateStart'>
+          &lt;div class=&quot;date-posts&quot;&gt;
+        </b:if>
+        <div class='post-outer'>
+          <b:include data='post' name='post'/>
+          <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
+        </div>
+
+        <!-- Ad -->
+        <b:if cond='data:post.includeAd'>
+          <div class='inline-ad'>
+            <data:adCode/>
+          </div>
+        </b:if>
+      </b:loop>
+      <b:if cond='data:numPosts != 0'>
+        &lt;/div&gt;&lt;/div&gt;
+      </b:if>
+    </div>
+
+    <!-- navigation -->
+    <b:include name='nextprev'/>
+
+    <!-- feed links -->
+    <b:include name='feedLinks'/>
+
+  <b:else/>
+    <b:include name='mobile-main'/>
+  </b:if>
+</b:includable>
+        <b:includable id='backlinkDeleteIcon' var='backlink'/>
+        <b:includable id='backlinks' var='post'/>
+        <b:includable id='comment-form' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <b:if cond='data:mobile'>
+      <h4 id='comment-post-message'>
+        <a expr:id='data:widget.instanceId + &quot;_comment-editor-toggle-link&quot;' href='javascript:void(0)'><data:postCommentMsg/></a></h4>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
+    <b:else/>
+      <h4 id='comment-post-message'><data:postCommentMsg/></h4>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    </b:if>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+        <b:includable id='commentDeleteIcon' var='comment'>
+  <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+    <b:if cond='data:showCmtPopup'>
+      <div class='goog-toggle-button'>
+        <div class='goog-inline-block comment-action-icon'/>
+      </div>
+    <b:else/>
+      <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'>
+        <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+      </a>
+    </b:if>
+  </span>
+</b:includable>
+        <b:includable id='comment_count_picker' var='post'>
+  <a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'>
+    <data:post.commentLabelFull/>:
+  </a>
+</b:includable>
+        <b:includable id='comment_picker' var='post'>
+  <b:if cond='data:post.showThreadedComments'>
+    <b:include data='post' name='threaded_comments'/>
+  <b:else/>
+    <b:include data='post' name='comments'/>
+  </b:if>
+</b:includable>
+        <b:includable id='comments' var='post'>
+  <div class='comments' id='comments'>
+    <a name='comments'/>
+    <b:if cond='data:post.allowComments'>
+      <h4><data:post.commentLabelFull/>:</h4>
+
+      <b:if cond='data:post.commentPagingRequired'>
+        <span class='paging-control-container'>
+          <b:if cond='data:post.hasOlderLinks'>
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'><data:post.oldestLinkText/></a>
+              &#160;
+            <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'><data:post.olderLinkText/></a>
+              &#160;
+          </b:if>
+
+          <data:post.commentRangeText/>
+
+          <b:if cond='data:post.hasNewerLinks'>
+            &#160;
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'><data:post.newerLinkText/></a>
+            &#160;
+            <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'><data:post.newestLinkText/></a>
+          </b:if>
+        </span>
+      </b:if>
+
+      <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+        <dl expr:class='data:post.avatarIndentClass' id='comments-block'>
+          <b:loop values='data:post.comments' var='comment'>
+            <dt expr:class='&quot;comment-author &quot; + data:comment.authorClass' expr:id='data:comment.anchorName'>
+              <b:if cond='data:comment.favicon'>
+                <img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/>
+              </b:if>
+              <a expr:name='data:comment.anchorName'/>
+              <b:if cond='data:blog.enabledCommentProfileImages'>
+                <data:comment.authorAvatarImage/>
+              </b:if>
+              <b:if cond='data:comment.authorUrl'>
+                <a expr:href='data:comment.authorUrl' rel='nofollow'><data:comment.author/></a>
+              <b:else/>
+                <data:comment.author/>
+              </b:if>
+              <data:commentPostedByMsg/>
+            </dt>
+            <dd class='comment-body' expr:id='data:widget.instanceId + data:comment.cmtBodyIdPostfix'>
+              <b:if cond='data:comment.isDeleted'>
+                <span class='deleted-comment'><data:comment.body/></span>
+              <b:else/>
+                <p>
+                  <data:comment.body/>
+                </p>
+              </b:if>
+            </dd>
+            <dd class='comment-footer'>
+              <span class='comment-timestamp'>
+                <a expr:href='data:comment.url' title='comment permalink'>
+                  <data:comment.timestamp/>
+                </a>
+                <b:include data='comment' name='commentDeleteIcon'/>
+              </span>
+            </dd>
+          </b:loop>
+        </dl>
+      </div>
+
+      <b:if cond='data:post.commentPagingRequired'>
+        <span class='paging-control-container'>
+          <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
+            <data:post.oldestLinkText/>
+          </a>
+          <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
+            <data:post.olderLinkText/>
+          </a>
+          &#160;
+          <data:post.commentRangeText/>
+          &#160;
+          <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
+            <data:post.newerLinkText/>
+          </a>
+          <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
+            <data:post.newestLinkText/>
+          </a>
+        </span>
+      </b:if>
+
+      <p class='comment-footer'>
+        <b:if cond='data:post.embedCommentForm'>
+          <b:if cond='data:post.allowNewComments'>
+            <b:include data='post' name='comment-form'/>
+          <b:else/>
+            <data:post.noNewCommentsText/>
+          </b:if>
+        <b:elseif cond='data:post.allowComments'/>
+          <a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'><data:postCommentMsg/></a>
+        </b:if>
+      </p>
+    </b:if>
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+
+  </div>
+</b:includable>
+        <b:includable id='feedLinks'>
+  <b:if cond='data:blog.pageType != &quot;item&quot;'> <!-- Blog feed links -->
+    <b:if cond='data:feedLinks'>
+      <div class='blog-feeds'>
+        <b:include data='feedLinks' name='feedLinksBody'/>
+      </div>
+    </b:if>
+
+  <b:else/> <!--Post feed links -->
+    <div class='post-feeds'>
+      <b:loop values='data:posts' var='post'>
+        <b:include cond='data:post.allowComments and data:post.feedLinks' data='post.feedLinks' name='feedLinksBody'/>
+      </b:loop>
+    </div>
+  </b:if>
+</b:includable>
+        <b:includable id='feedLinksBody' var='links'>
+  <div class='feed-links'>
+  <data:feedLinksMsg/>
+  <b:loop values='data:links' var='f'>
+     <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+  </b:loop>
+  </div>
+</b:includable>
+        <b:includable id='iframe_comments' var='post'>
+  <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+</b:includable>
+        <b:includable id='mobile-index-post' var='post'>
+  <div class='mobile-date-outer date-outer'>
+    <b:if cond='data:post.dateHeader'>
+      <div class='date-header'>
+        <span><data:post.dateHeader/></span>
+      </div>
+    </b:if>
+
+    <div class='mobile-post-outer'>
+      <a expr:href='data:post.url'>
+        <h3 class='mobile-index-title entry-title' itemprop='name'>
+          <data:post.title/>
+        </h3>
+
+        <div class='mobile-index-arrow'>&amp;rsaquo;</div>
+
+        <div class='mobile-index-contents'>
+          <b:if cond='data:post.thumbnailUrl'>
+            <div class='mobile-index-thumbnail'>
+              <div class='Image'>
+                <img expr:src='data:post.thumbnailUrl'/>
+              </div>
+            </div>
+          </b:if>
+
+          <div class='post-body'>
+            <b:if cond='data:post.snippet'><data:post.snippet/></b:if>
+          </div>
+        </div>
+
+        <div style='clear: both;'/>
+      </a>
+
+      <div class='mobile-index-comment'>
+        <b:include cond='data:blog.pageType != &quot;static_page&quot;                          and data:post.allowComments                          and data:post.numComments != 0' data='post' name='comment_count_picker'/>
+      </div>
+    </div>
+  </div>
+</b:includable>
+        <b:includable id='mobile-main' var='top'>
+    <!-- posts -->
+    <div class='blog-posts hfeed'>
+
+      <b:include data='top' name='status-message'/>
+
+      <b:if cond='data:blog.pageType == &quot;index&quot;'>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-index-post'/>
+        </b:loop>
+      <b:else/>
+        <b:loop values='data:posts' var='post'>
+          <b:include data='post' name='mobile-post'/>
+        </b:loop>
+      </b:if>
+    </div>
+
+   <b:include name='mobile-nextprev'/>
+</b:includable>
+        <b:includable id='mobile-nextprev'>
+  <div class='blog-pager' id='blog-pager'>
+    <b:if cond='data:newerPageUrl'>
+      <div class='mobile-link-button' id='blog-pager-newer-link'>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>&amp;lsaquo;</a>
+      </div>
+    </b:if>
+
+    <b:if cond='data:olderPageUrl'>
+      <div class='mobile-link-button' id='blog-pager-older-link'>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'>&amp;rsaquo;</a>
+      </div>
+    </b:if>
+
+    <div class='mobile-link-button' id='blog-pager-home-link'>
+    <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+    </div>
+
+    <div class='mobile-desktop-link'>
+      <a class='home-link' expr:href='data:desktopLinkUrl'><data:desktopLinkMsg/></a>
+    </div>
+
+  </div>
+  <div class='clear'/>
+</b:includable>
+        <b:includable id='mobile-post' var='post'>
+  <div class='date-outer'>
+    <b:if cond='data:post.dateHeader'>
+      <h2 class='date-header'><span><data:post.dateHeader/></span></h2>
+    </b:if>
+    <div class='date-posts'>
+      <div class='post-outer'>
+
+        <div class='post hentry uncustomized-post-template' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+          <b:if cond='data:post.thumbnailUrl'>
+            <meta expr:content='data:post.thumbnailUrl' itemprop='image_url'/>
+          </b:if>
+          <meta expr:content='data:blog.blogId' itemprop='blogId'/>
+          <meta expr:content='data:post.id' itemprop='postId'/>
+
+          <a expr:name='data:post.id'/>
+          <b:if cond='data:post.title'>
+            <h3 class='post-title entry-title' itemprop='name'>
+              <b:if cond='data:post.link'>
+                <a expr:href='data:post.link'><data:post.title/></a>
+              <b:elseif cond='data:post.url and data:blog.url != data:post.url'/>
+                <a expr:href='data:post.url'><data:post.title/></a>
+              <b:else/>
+                <data:post.title/>
+              </b:if>
+            </h3>
+          </b:if>
+
+          <div class='post-header'>
+            <div class='post-header-line-1'/>
+          </div>
+
+          <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' itemprop='articleBody'>
+            <data:post.body/>
+            <div style='clear: both;'/> <!-- clear for photos floats -->
+          </div>
+
+          <div class='post-footer'>
+            <div class='post-footer-line post-footer-line-1'>
+              <span class='post-author vcard'>
+                <b:if cond='data:top.showAuthor'>
+                  <b:if cond='data:post.authorProfileUrl'>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                      <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
+                      <a expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
+                        <span itemprop='name'><data:post.author/></span>
+                      </a>
+                    </span>
+                  <b:else/>
+                    <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                      <span itemprop='name'><data:post.author/></span>
+                    </span>
+                  </b:if>
+                </b:if>
+              </span>
+
+              <span class='post-timestamp'>
+                <b:if cond='data:top.showTimestamp'>
+                  <data:top.timestampLabel/>
+                  <b:if cond='data:post.url'>
+                    <meta expr:content='data:post.url.canonical' itemprop='url'/>
+                    <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></a>
+                  </b:if>
+                </b:if>
+              </span>
+
+              <span class='post-comment-link'>
+                <b:include cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}                                  and data:post.allowComments' data='post' name='comment_count_picker'/>
+              </span>
+            </div>
+
+            <div class='post-footer-line post-footer-line-2'>
+              <b:if cond='data:top.showMobileShare'>
+                <div class='mobile-link-button goog-inline-block' id='mobile-share-button'>
+                  <a href='javascript:void(0);'><data:shareMsg/></a>
+                </div>
+              </b:if>
+            </div>
+
+          </div>
+        </div>
+
+        <b:include cond='data:blog.pageType in {&quot;static_page&quot;,&quot;item&quot;}' data='post' name='comment_picker'/>
+      </div>
+    </div>
+  </div>
+</b:includable>
+        <b:includable id='nextprev'>
+  <div class='blog-pager' id='blog-pager'>
+    <b:if cond='data:newerPageUrl'>
+      <span id='blog-pager-newer-link'>
+      <a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'><data:newerPageTitle/></a>
+      </span>
+    </b:if>
+
+    <b:if cond='data:olderPageUrl'>
+      <span id='blog-pager-older-link'>
+      <a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'><data:olderPageTitle/></a>
+      </span>
+    </b:if>
+
+    <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a>
+
+    <b:if cond='data:mobileLinkUrl'>
+      <div class='blog-mobile-link'>
+        <a expr:href='data:mobileLinkUrl'><data:mobileLinkMsg/></a>
+      </div>
+    </b:if>
+
+  </div>
+  <div class='clear'/>
+</b:includable>
+        <b:includable id='post' var='post'>
+  <div class='post hentry uncustomized-post-template' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+    <b:if cond='data:post.firstImageUrl'>
+      <meta expr:content='data:post.firstImageUrl' itemprop='image_url'/>
+    </b:if>
+    <meta expr:content='data:blog.blogId' itemprop='blogId'/>
+    <meta expr:content='data:post.id' itemprop='postId'/>
+
+    <a expr:name='data:post.id'/>
+    <b:if cond='data:post.title'>
+      <h3 class='post-title entry-title' itemprop='name'>
+      <b:if cond='data:post.link or (data:post.url and data:blog.url != data:post.url)'>
+        <a expr:href='data:post.link ? data:post.link : data:post.url'><data:post.title/></a>
+      <b:else/>
+        <data:post.title/>
+      </b:if>
+      </h3>
+    </b:if>
+
+    <div class='post-header'>
+    <div class='post-header-line-1'/>
+    </div>
+
+    <!-- Then use the post body as the schema.org description, for good G+/FB snippeting. -->
+    <div class='post-body entry-content' expr:id='&quot;post-body-&quot; + data:post.id' expr:itemprop='(data:blog.metaDescription ? &quot;&quot; : &quot;description &quot;) + &quot;articleBody&quot;'>
+      <data:post.body/>
+      <div style='clear: both;'/> <!-- clear for photos floats -->
+    </div>
+
+    <b:if cond='data:post.hasJumpLink'>
+      <div class='jump-link'>
+        <a expr:href='data:post.url + &quot;#more&quot;' expr:title='data:post.title'><data:post.jumpText/></a>
+      </div>
+    </b:if>
+
+    <div class='post-footer'>
+    <div class='post-footer-line post-footer-line-1'>
+      <span class='post-author vcard'>
+        <b:if cond='data:top.showAuthor'>
+          <data:top.authorLabel/>
+            <b:if cond='data:post.authorProfileUrl'>
+              <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                <meta expr:content='data:post.authorProfileUrl' itemprop='url'/>
+                <a class='g-profile' expr:href='data:post.authorProfileUrl' rel='author' title='author profile'>
+                  <span itemprop='name'><data:post.author/></span>
+                </a>
+              </span>
+            <b:else/>
+              <span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+                <span itemprop='name'><data:post.author/></span>
+              </span>
+            </b:if>
+        </b:if>
+      </span>
+
+      <span class='post-timestamp'>
+        <b:if cond='data:top.showTimestamp'>
+          <data:top.timestampLabel/>
+          <b:if cond='data:post.url'>
+            <meta expr:content='data:post.url.canonical' itemprop='url'/>
+            <a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'><abbr class='published' expr:title='data:post.timestampISO8601' itemprop='datePublished'><data:post.timestamp/></abbr></a>
+          </b:if>
+        </b:if>
+      </span>
+
+      <span class='post-comment-link'>
+        <b:include cond='data:blog.pageType not in {&quot;item&quot;,&quot;static_page&quot;}                          and data:post.allowComments' data='post' name='comment_count_picker'/>
+      </span>
+
+      <span class='post-icons'>
+        <!-- email post links -->
+        <b:if cond='data:post.emailPostUrl'>
+          <span class='item-action'>
+          <a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'>
+            <img alt='' class='icon-action' height='13' src='https://resources.blogblog.com/img/icon18_email.gif' width='18'/>
+          </a>
+          </span>
+        </b:if>
+
+        <!-- quickedit pencil -->
+        <b:include data='post' name='postQuickEdit'/>
+      </span>
+
+      <!-- share buttons -->
+      <div class='post-share-buttons goog-inline-block'>
+        <b:include cond='data:post.sharePostUrl' data='post' name='shareButtons'/>
+      </div>
+
+      </div>
+
+      <div class='post-footer-line post-footer-line-2'>
+      <span class='post-labels'>
+        <b:if cond='data:top.showPostLabels and data:post.labels'>
+          <data:postLabelsLabel/>
+          <b:loop values='data:post.labels' var='label'>
+            <a expr:href='data:label.url' rel='tag'><data:label.name/></a><b:if cond='not data:label.isLast'>,</b:if>
+          </b:loop>
+        </b:if>
+      </span>
+      </div>
+
+      <div class='post-footer-line post-footer-line-3'>
+      <span class='post-location'>
+        <b:if cond='data:top.showLocation and data:post.location'>
+          <data:postLocationLabel/>
+          <a expr:href='data:post.location.mapsUrl' target='_blank'><data:post.location.name/></a>
+        </b:if>
+      </span>
+      </div>
+      <b:if cond='data:post.authorAboutMe'>
+        <div class='author-profile' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+          <b:if cond='data:post.authorPhoto.url'>
+            <img expr:src='data:post.authorPhoto.url' itemprop='image' width='50px'/>
+          </b:if>
+          <div>
+            <a class='g-profile' expr:href='data:post.authorProfileUrl' itemprop='url' rel='author' title='author profile'>
+              <span itemprop='name'><data:post.author/></span>
+            </a>
+          </div>
+          <span itemprop='description'><data:post.authorAboutMe/></span>
+        </div>
+      </b:if>
+    </div>
+  </div>
+</b:includable>
+        <b:includable id='postQuickEdit' var='post'>
+  <b:if cond='data:post.editUrl'>
+    <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
+      <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
+        <img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+      </a>
+    </span>
+  </b:if>
+</b:includable>
+        <b:includable id='shareButtons' var='post'>
+  <b:if cond='data:top.showEmailButton'><a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'><span class='share-button-link-text'><data:top.emailThisMsg/></span></a></b:if><b:if cond='data:top.showBlogThisButton'><a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &quot;&amp;target=blog&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=270,width=475\&quot;); return false;&quot;' expr:title='data:top.blogThisMsg' target='_blank'><span class='share-button-link-text'><data:top.blogThisMsg/></span></a></b:if><b:if cond='data:top.showTwitterButton'><a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &quot;&amp;target=twitter&quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToTwitterMsg/></span></a></b:if><b:if cond='data:top.showFacebookButton'><a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &quot;&amp;target=facebook&quot;' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToFacebookMsg/></span></a></b:if><b:if cond='data:top.showPinterestButton'><a class='goog-inline-block share-button sb-pinterest' expr:href='data:post.sharePostUrl + &quot;&amp;target=pinterest&quot;' expr:title='data:top.shareToPinterestMsg' target='_blank'><span class='share-button-link-text'><data:top.shareToPinterestMsg/></span></a></b:if>
+</b:includable>
+        <b:includable id='status-message'>
+  <b:if cond='data:navMessage'>
+  <div class='status-msg-wrap'>
+    <div class='status-msg-body'>
+      <data:navMessage/>
+    </div>
+    <div class='status-msg-border'>
+      <div class='status-msg-bg'>
+        <div class='status-msg-hidden'><data:navMessage/></div>
+      </div>
+    </div>
+  </div>
+  <div style='clear: both;'/>
+  </b:if>
+</b:includable>
+        <b:includable id='threaded-comment-form' var='post'>
+  <div class='comment-form'>
+    <a name='comment-form'/>
+    <b:if cond='data:mobile'>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/>
+    <b:else/>
+      <p><data:blogCommentMessage/></p>
+      <data:blogTeamBlogMessage/>
+      <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+      <iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+    </b:if>
+    <data:post.cmtfpIframe/>
+    <script type='text/javascript'>
+      BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+    </script>
+  </div>
+</b:includable>
+        <b:includable id='threaded_comment_js' var='post'>
+  <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
+
+  <script type='text/javascript'>
+    (function() {
+      var items = <data:post.commentJso/>;
+      var msgs = <data:post.commentMsgs/>;
+      var config = <data:post.commentConfig/>;
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        var text = (entry &&
+                    ((entry.content && entry.content.$t) ||
+                     (entry.summary && entry.summary.$t))) ||
+            '';
+        if (entry && entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + text + '</span>';
+            }
+          }
+        }
+        return text;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/comment/delete/'
+               + config.blogId + '/' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+  </script>
+</b:includable>
+        <b:includable id='threaded_comments' var='post'>
+  <div class='comments' id='comments'>
+    <a name='comments'/>
+    <h4><data:post.commentLabelFull/>:</h4>
+
+    <div class='comments-content'>
+      <b:include cond='data:post.embedCommentForm' data='post' name='threaded_comment_js'/>
+      <div id='comment-holder'>
+         <data:post.commentHtml/>
+      </div>
+    </div>
+
+    <p class='comment-footer'>
+      <b:if cond='data:post.allowNewComments'>
+        <b:include data='post' name='threaded-comment-form'/>
+      <b:else/>
+        <data:post.noNewCommentsText/>
+      </b:if>
+    </p>
+
+    <b:if cond='data:showCmtPopup'>
+      <div id='comment-popup'>
+        <iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'>
+        </iframe>
+      </div>
+    </b:if>
+
+    <div id='backlinks-container'>
+    <div expr:id='data:widget.instanceId + &quot;_backlinks-container&quot;'>
+    </div>
+    </div>
+  </div>
+</b:includable>
+      </b:widget>
+    </b:section>
+
+  </main>
+
+
+  <!-- SIDEBAR -->
+
+  <aside class='gh-sidebar'>
+
+    <b:section class='sidebar' id='sidebar' showaddelement='yes'>
+      <b:widget id='HTML5' locked='false' title='GSM HASAN SOFTWARE CATEGORIES' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<style>
+#ghSidebarTools {
+  background: #0b1220;
+  border: 1px solid #13bde8;
+  border-radius: 12px;
+  padding: 12px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+#ghSidebarTools .ghs-title {
+  color: #52ddff;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 4px;
+  border-bottom: 1px solid #24506a;
+  margin-bottom: 10px;
+}
+#ghSidebarTools .ghs-heading {
+  color: #52ddff;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 15px 0 7px;
+}
+#ghSidebarTools a {
+  display: block;
+  background: #142238;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 9px;
+  margin: 6px 0;
+  border: 1px solid #253d59;
+  border-radius: 7px;
+  overflow-wrap: anywhere;
+}
+#ghSidebarTools a:hover {
+  background: #123a52;
+  border-color: #43d8ff;
+  color: #65e4ff;
+}
+</style>
+
+<div id="ghSidebarTools">
+  <div class="ghs-title">GSM HASAN SOFTWARE CATEGORIES</div>
+
+  <div class="ghs-heading">MAIN CATEGORIES</div>
+  <a href="/search/label/FRP">🔐 FRP</a>
+  <a href="/search/label/FLASHING">⚡ FLASHING</a>
+  <a href="/search/label/TOOLS">🧰 TOOLS</a>
+  <a href="/search/label/DRIVERS">💻 DRIVERS</a>
+  <a href="/search/label/EDL">🔧 EDL WORK</a>
+
+  <div class="ghs-heading">SOFTWARE &amp; TOOLS</div>
+  <a href="/p/usb-redirector-197-unlock-tool-amt-tool.html">🔌 USB REDIRECTOR 197 + UNLOCK TOOL + AMT TOOL</a>
+  <a href="/p/u-tool-and-amt.html">🧰 U TOOL AND AMT</a>
+  <a href="/p/android-multi-tool.html">📱 ANDROID MULTI TOOL</a>
+  <a href="/p/i-phone-online-tools.html">🍎 iPHONE ONLINE TOOLS</a>
+  <a href="/p/online-tools.html">🌐 ONLINE TOOLS</a>
+  <a href="/p/online-work-tools.html">💼 ONLINE WORK TOOLS</a>
+  <a href="/p/all-tools-activations-credtis.html">⚡ ALL TOOLS ACTIVATIONS &amp; CREDITS</a>
+  <a href="/p/all-crack-tools-by-gsm-hasan.html">🛠️ ALL CRACK TOOLS</a>
+
+  <div class="ghs-heading">FRP &amp; ACCOUNT</div>
+  <a href="/p/sam-frp-online-tools.html">🔐 SAM FRP ONLINE TOOLS</a>
+  <a href="/p/sm-android-11-frp-bypass-tool.html">🔓 SM ANDROID 11 FRP BYPASS TOOL</a>
+  <a href="/p/samsung-frp-version-list.html">📋 SAMSUNG FRP VERSION LIST</a>
+  <a href="/p/frp-tools-by-gsm-hasan.html">🔑 FRP TOOLS BY GSM HASAN</a>
+  <a href="/p/mi-account-online-tool.html">📲 MI ACCOUNT ONLINE TOOL</a>
+  <a href="/p/mi-account-remove-files-free-by-gsm.html">📁 MI ACCOUNT REMOVE FILES</a>
+
+  <div class="ghs-heading">DRIVERS &amp; FILES</div>
+  <a href="/p/lib-usb-driver.html">💻 LIB USB DRIVER</a>
+  <a href="/p/mtk-usb-drivers.html">🔌 ALL USB DRIVERS</a>
+  <a href="/p/latest-files.html">📦 LATEST FILES</a>
+  <a href="/p/my-software-data.html">💾 MY SOFTWARE DATA</a>
+  <a href="/p/all-jio-mobiles-boot-key-by-gsm-hasan.html">📱 ALL JIO MOBILES BOOT KEY</a>
+
+  <div class="ghs-heading">OTHER SERVICES</div>
+  <a href="/p/software-course.html">🎓 SOFTWARE COURSE</a>
+  <a href="/p/whatsapp-number.html">📞 WHATSAPP NUMBER</a>
+  <a href="/p/youtubecom.html">▶️ YOUTUBE CHANNEL GSM HASAN</a>
+  <a href="/p/subscribe.html">🏪 SAMRAT MOBILE SHOP</a>
+  <a href="/p/namaz-tarjuma-hindi-me.html">🕌 NAMAZ TARJUMA HINDI ME</a>
+  <a href="/p/terms-of-services.html">ℹ️ हमारे बारे में</a>
+</div>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML4' locked='false' title='GSM HASAN SOFTWARE CATEGORIES' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'/>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML3' locked='false' title='.gsm-wrap{   max-width:1100px;   margin:auto;   padding:20px 12px;   font-family:Arial,sans-' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<style>
+.gsm-wrap{
+  max-width:1100px;
+  margin:auto;
+  padding:20px 12px;
+  font-family:Arial,sans-serif;
+  background:#0b0f14;
+  color:#fff;
+  border-radius:18px;
+}
+
+.gsm-title{
+  text-align:center;
+  font-size:28px;
+  font-weight:800;
+  margin-bottom:6px;
+  background:linear-gradient(90deg,#00e5ff,#fff,#00e5ff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.gsm-subtitle{
+  text-align:center;
+  color:#aab4c3;
+  margin-bottom:20px;
+}
+
+.gsm-search{
+  width:100%;
+  box-sizing:border-box;
+  padding:14px 18px;
+  border-radius:30px;
+  border:1px solid #263241;
+  background:#151b23;
+  color:#fff;
+  outline:none;
+  font-size:15px;
+  margin-bottom:25px;
+}
+
+.gsm-category{
+  margin-top:25px;
+  margin-bottom:12px;
+  padding:10px 15px;
+  border-left:4px solid #00d9ff;
+  background:linear-gradient(90deg,#151d27,transparent);
+  font-size:20px;
+  font-weight:700;
+}
+
+.gsm-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+
+.gsm-box{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  background:linear-gradient(145deg,#18212c,#0e141c);
+  border:1px solid #293746;
+  border-radius:14px;
+  padding:18px</style>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML2' locked='false' title='Gsm Hasan' type='HTML'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<style>
+.gsm-wrap{
+  max-width:1100px;
+  margin:auto;
+  padding:20px 12px;
+  font-family:Arial,sans-serif;
+  background:#0b0f14;
+  color:#fff;
+  border-radius:18px;
+}
+
+.gsm-title{
+  text-align:center;
+  font-size:28px;
+  font-weight:800;
+  margin-bottom:6px;
+  background:linear-gradient(90deg,#00e5ff,#fff,#00e5ff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.gsm-subtitle{
+  text-align:center;
+  color:#aab4c3;
+  margin-bottom:20px;
+}
+
+.gsm-search{
+  width:100%;
+  box-sizing:border-box;
+  padding:14px 18px;
+  border-radius:30px;
+  border:1px solid #263241;
+  background:#151b23;
+  color:#fff;
+  outline:none;
+  font-size:15px;
+  margin-bottom:25px;
+}
+
+.gsm-category{
+  margin-top:25px;
+  margin-bottom:12px;
+  padding:10px 15px;
+  border-left:4px solid #00d9ff;
+  background:linear-gradient(90deg,#151d27,transparent);
+  font-size:20px;
+  font-weight:700;
+}
+
+.gsm-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+
+.gsm-box{
+  display:block;
+  text-decoration:none;
+  color:#fff;
+  background:linear-gradient(145deg,#18212c,#0e141c);
+  border:1px solid #293746;
+  border-radius:14px;
+  padding:18px</style>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+      </b:widget>
+      <b:widget id='PageList2' locked='false' title='पेज' type='PageList'>
+        <b:widget-settings>
+          <b:widget-setting name='pageListJson'><![CDATA[{"link0":{"href":"http://hasan800.blogspot.com/","position":0,"title":"मुख्यपृष्ठ"},"6921160744731140651":{"href":"https://hasan800.blogspot.com/p/mtk-usb-drivers.html","position":1,"title":"All usb driver Gsm Hasan"}}]]></b:widget-setting>
+          <b:widget-setting name='homeTitle'>म&#2369;ख&#2381;यप&#2371;ष&#2381;ठ</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+  <div class='widget-content'>
+    <b:if cond='data:mobile'>
+      <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
+        <b:if cond='data:showPlaceholder'>
+          <option disabled='disabled' hidden='hidden' value=''>
+            <b:attr cond='!data:hasCurrentPage' name='selected' value='selected'/>
+            <b:message name='messages.moveToPage'/>
+          </option>
+        </b:if>
+        <b:loop values='data:links' var='link'>
+          <option expr:value='data:link.href'>
+            <b:attr cond='data:link.isCurrentPage' name='selected' value='selected'/>
+            <data:link.title/>
+          </option>
+        </b:loop>
+      </select>
+      <span class='pagelist-arrow'>&amp;#9660;</span>
+    <b:else/>
+      <ul>
+        <b:loop values='data:links' var='link'>
+          <li>
+            <b:class cond='data:link.isCurrentPage' name='selected'/>
+            <a expr:href='data:link.href'><data:link.title/></a>
+          </li>
+        </b:loop>
+      </ul>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+      </b:widget>
+      <b:widget id='PageList1' locked='false' title='पेज' type='PageList'>
+        <b:widget-settings>
+          <b:widget-setting name='pageListJson'><![CDATA[{"5590690968537750940":{"href":"https://hasan800.blogspot.com/p/realme-one-click-frp-tools.html","position":1,"title":"Realme One Click Frp Tools"},"link0":{"href":"http://hasan800.blogspot.com/","position":0,"title":"मुख्यपृष्ठ"}}]]></b:widget-setting>
+          <b:widget-setting name='homeTitle'>म&#2369;ख&#2381;यप&#2371;ष&#2381;ठ</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+  <b:if cond='data:title != &quot;&quot;'><h2><data:title/></h2></b:if>
+  <div class='widget-content'>
+    <b:if cond='data:mobile'>
+      <select expr:id='data:widget.instanceId + &quot;_select&quot;'>
+        <b:if cond='data:showPlaceholder'>
+          <option disabled='disabled' hidden='hidden' value=''>
+            <b:attr cond='!data:hasCurrentPage' name='selected' value='selected'/>
+            <b:message name='messages.moveToPage'/>
+          </option>
+        </b:if>
+        <b:loop values='data:links' var='link'>
+          <option expr:value='data:link.href'>
+            <b:attr cond='data:link.isCurrentPage' name='selected' value='selected'/>
+            <data:link.title/>
+          </option>
+        </b:loop>
+      </select>
+      <span class='pagelist-arrow'>&amp;#9660;</span>
+    <b:else/>
+      <ul>
+        <b:loop values='data:links' var='link'>
+          <li>
+            <b:class cond='data:link.isCurrentPage' name='selected'/>
+            <a expr:href='data:link.href'><data:link.title/></a>
+          </li>
+        </b:loop>
+      </ul>
+    </b:if>
+    <b:include name='quickedit'/>
+  </div>
+</b:includable>
+      </b:widget>
+      <b:widget id='HTML1' locked='false' title='GSM HASAN' type='HTML' version='1'>
+        <b:widget-settings>
+          <b:widget-setting name='content'><![CDATA[<style>
+#hasan-menu {
+  background: #102b46;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+#hasan-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#hasan-menu > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#hasan-menu li {
+  position: relative;
+}
+#hasan-menu a,
+#hasan-menu summary {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+#hasan-menu a:hover,
+#hasan-menu summary:hover {
+  background: #087eae;
+}
+#hasan-menu details ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 190px;
+  background: #102b46;
+  z-index: 9999;
+}
+#hasan-menu details[open] ul {
+  display: block;
+}
+#hasan-menu details li a {
+  padding: 12px;
+  border-bottom: 1px solid #29445c;
+}
+#hasan-menu summary {
+  list-style: none;
+}
+#hasan-menu summary::-webkit-details-marker {
+  display: none;
+}
+@media(max-width:600px) {
+  #hasan-menu > ul {
+    display: block;
+  }
+  #hasan-menu details ul {
+    position: static;
+    width: 100%;
+  }
+}
+</style>
+
+<nav id="hasan-menu">
+<ul>
+<li><a href="/">🏠 HOME</a></li>
+
+<li>
+<details>
+<summary>🔐 FRP ▾</summary>
+<ul>
+<li><a href="#">Samsung FRP</a></li>
+<li><a href="#">Vivo FRP</a></li>
+<li><a href="#">Oppo FRP</a></li>
+<li><a href="#">Xiaomi FRP</a></li>
+</ul>
+</details>
+</li>
+
+<li>
+<details>
+<summary>🧰 TOOLS ▾</summary>
+<ul>
+<li><a href="#">UMT PRO</a></li>
+<li><a href="#">DFT PRO</a></li>
+<li><a href="#">TSM PRO</a></li>
+<li><a href="#">Chimera Tool</a></li>
+<li><a href="#">Unlock Tool</a></li>
+</ul>
+</details>
+</li>
+
+<li>
+<details>
+<summary>⚡ FLASHING ▾</summary>
+<ul>
+<li><a href="#">Flash Files</a></li>
+<li><a href="#">Firmware</a></li>
+<li><a href="#">EDL Files</a></li>
+</ul>
+</details>
+</li>
+
+<li>
+<details>
+<summary>💻 DRIVERS ▾</summary>
+<ul>
+<li><a href="#">USB Drivers</a></li>
+<li><a href="#">MTK Drivers</a></li>
+<li><a href="#">Qualcomm Drivers</a></li>
+</ul>
+</details>
+</li>
+
+<li><a href="#">📦 LATEST FILES</a></li>
+<li><a href="#">📞 CONTACT</a></li>
+</ul>
+</nav>]]></b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+
+          <div class='widget-content'>
+
+            <h3 class='gh-logo'>GSM HASAN</h3>
+
+            <p>
+              Software Fixer &amp; GSM Solutions
+            </p>
+
+            <p>
+              
+              
+              
+              FRP &#8226; Flashing &#8226; Unlocking &#8226; EDL
+              &#8226; IMEI &#8226; Activation
+            </p>
+
+            <a class='gh-btn' href='https://wa.me/919794390484' target='_blank'>
+               WhatsApp Order
+            </a>
+
+          </div>
+
+        </b:includable>
+      </b:widget>
+    </b:section>
+
+  </aside>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer class='gh-footer'>
+
+  <div class='gh-footer-inner'>
+
+    <div class='gh-footer-title'>
+      GSM <span>HASAN</span>
+    </div>
+
+    <p>
+      SOFTWARE SOLUTIONS &#8226; FAST &#8226; SAFE &#8226;
+    </p>
+
+    <p>
+      &#169; <data:blog.title/> &#8212; All Rights Reserved
+    </p>
+
+  </div>
+
+</footer>
+
+<!-- BACK TO TOP -->
+
+<button id='ghTop' onclick='window.scrollTo({top:0,behavior:&quot;smooth&quot;})'>
+  &#8593;
+</button>
+
+
+<script type='text/javascript'>
+//<![CDATA[
+
+window.addEventListener('scroll',function(){
+
+  var b=document.getElementById('ghTop');
+
+  if(window.scrollY>400){
+    b.style.display='block';
+  }else{
+    b.style.display='none';
+  }
+
+});
+
+//]]>
+</script>
+
+</body>
+</html>
